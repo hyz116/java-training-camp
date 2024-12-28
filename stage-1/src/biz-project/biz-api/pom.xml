@@ -24,6 +24,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <!--将optional设置为true,表示该依赖不会进行传递，被视为默认排除-->
             <optional>true</optional>
         </dependency>
 
