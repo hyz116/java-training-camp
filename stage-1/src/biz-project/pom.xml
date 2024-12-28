@@ -8,6 +8,7 @@
         <artifactId>apache</artifactId>
         <version>23</version>
     </parent>
+    <!--继承Apache pom-->
 
     <groupId>com.acme</groupId>
     <artifactId>biz-project</artifactId>
@@ -45,7 +46,7 @@
 
     <dependencyManagement>
         <dependencies>
-
+            <!-- 组合方式引入Spring-boot 和 Spring-cloud POM文件-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -99,6 +100,7 @@
 
     <build>
         <plugins>
+            <!--使用flatten插件统一管理项目版本号-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>

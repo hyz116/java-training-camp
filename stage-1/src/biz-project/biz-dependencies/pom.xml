@@ -12,6 +12,10 @@
 
     <artifactId>biz-dependencies</artifactId>
 
+    <description>
+        业务组件BOM, 将业务API通过Maven BOM的方式暴露给启用应用使用。
+    </description>
+
    <dependencyManagement>
 
        <dependencies>
